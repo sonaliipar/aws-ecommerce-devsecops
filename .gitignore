@@ -1,0 +1,13 @@
+target/
+.env
+*.pem
+*.key
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate*
+terraform/terraform.tfvars
+terraform/crash.log
+.terraform/
+.idea/
+.vscode/
+.DS_Store
