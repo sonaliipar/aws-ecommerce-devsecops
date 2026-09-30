@@ -1,0 +1,10 @@
+groups:
+  - name: ecommerce
+    rules:
+      - alert: EcommerceTargetDown
+        expr: up{job="ecommerce"} == 0
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: E-commerce metrics target is down

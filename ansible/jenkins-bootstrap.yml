@@ -1,0 +1,13 @@
+---
+- name: Prepare a Debian/Ubuntu Jenkins agent (illustrative)
+  hosts: jenkins_agents
+  become: true
+  tasks:
+    - name: Install runtime dependencies
+      ansible.builtin.apt:
+        update_cache: true
+        name: [openjdk-17-jdk, git, curl, unzip]
+        state: present
+    - name: Explain container runtime installation
+      ansible.builtin.debug:
+        msg: "Install Docker Engine using the official vendor instructions for your OS; add the Jenkins agent user to the docker group only if the risk is accepted."

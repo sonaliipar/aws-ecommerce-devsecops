@@ -1,0 +1,5 @@
+aws_region = "ap-south-1"
+project_name = "ecommerce-devsecops"
+db_username = "ecommerce_admin"
+db_password = "REPLACE_WITH_A_STRONG_RANDOM_PASSWORD"
+state_bucket_name = "REPLACE-WITH-GLOBALLY-UNIQUE-STATE-BUCKET"
